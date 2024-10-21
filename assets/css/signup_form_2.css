@@ -1,0 +1,150 @@
+/* Style for the body (background and layout) */
+body {
+    height: 100%; /* Full viewport height */
+    background-image: url(../imgs/v915-wit-002.jpg); /* Background image */
+    background-size: cover; /* Cover entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repetition of the image */
+}
+
+/* Style for the container that centers the form on the screen */
+.container-fluid {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+/* Style for the Signup form border */
+.Signup_border {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Padding around the content */
+    width: 350px; /* Fixed width for the form */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 20px; /* Round corners of the form */
+    background: linear-gradient(to top, #62cff4, #2c67f2); /* Gradient background (light to dark blue) */
+    opacity: 0.8; /* Slightly transparent form */
+}
+
+/* Container for each input field and its floating label */
+.input-group {
+    position: relative; /* Allows label to move on focus */
+    margin-bottom: 30px; /* Space between input fields */
+    text-align: left; /* Align text to the left */
+}
+
+/* Style for the floating label */
+.label {
+    position: absolute; /* Position label over the input field */
+    left: 10px; /* Slight offset from the left */
+    top: 12px; /* Positioned near the middle of the input */
+    color: rgb(255, 255, 255); /* White text for label */
+    transition: all 0.2s ease; /* Smooth transition for label movement */
+    pointer-events: none; /* Prevents label from being clickable */
+}
+
+/* Adjust label position when input is focused or not empty */
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+    top: -10px; /* Move label above the input */
+    left: 10px; /* Keep left padding consistent */
+    font-size: 12px; /* Shrink label */
+    color: #000000; /* Keep the label white */
+}
+
+/* Base styling for the input fields (email and password) */
+.input {
+    font-size: 18px; /* Font size for input text */
+    border: none; /* Remove default border */
+    border-bottom: 2px solid #ccc; /* Bottom border for line effect */
+    background: transparent; /* Transparent background */
+    color: rgb(255, 255, 255); /* White text */
+    width: 100%; /* Full width of the form */
+    padding: 10px; /* Padding inside the input */
+    transition: all 0.2s ease; /* Smooth transition for border color */
+}
+
+/* Placeholder color for inputs */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White placeholder text */
+    opacity: 1; /* Full opacity for placeholder */
+}
+
+/* Focus state for input fields */
+input:focus {
+    border-bottom: 2px solid rgb(255, 255, 255); /* White bottom border on focus */
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8); /* Brighten the shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Specific styling for the password input */
+input[type="password"] {
+    font-size: 18px; /* Set font size for password input */
+}
+
+/* Autofill styles for browsers like Chrome */
+input:-webkit-autofill {
+    border-bottom: 2px solid #000; /* Black border for autofill */
+    background-color: transparent; /* Transparent background for autofill */
+    color: rgb(255, 255, 255) !important; /* White text color for autofill */
+}
+
+/* Style for the Signup button */
+.signup_btn {
+    width: 75%; /* Button width relative to form */
+    padding: 10px; /* Padding inside the button */
+    background-color: #ffffff; /* White button background */
+    color: rgb(2, 2, 2); /* Black text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Round the button corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline for the button */
+}
+
+/* Style for links inside the form (e.g., login, signup) */
+.links {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* White text for links */
+}
+
+/* Style for the privacy policy and terms of service links */
+.privacy {
+    color: #ffffff; /* White text for privacy and terms links */
+}
+
+/* Style for paragraphs with small text (e.g., the agreement section) */
+.p {
+    font-size: 14px; /* Small font size for paragraphs */
+}
+
+/* Error styling for input fields */
+input.error {
+    border: 2px solid red; /* Adds a red border to input fields with errors */
+}
+
+/* Style for error messages */
+.error {
+    color: red; /* Red color for error messages */
+    font-size: 12px; /* Smaller font size for error messages */
+}
+
+/* Style for the checkbox and its label (Show Password) */
+.toggle-checkbox {
+    display: flex; /* Flexbox for aligning the checkbox and label */
+    align-items: center; /* Centers the checkbox and label vertically */
+    margin-top: 10px; /* Adds space above the checkbox */
+}
+
+#showPassword {
+    margin-right: 5px; /* Adds space between the checkbox and the label */
+}
+
+.show_btn {
+    font-size: 13px; /* Font size for show button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #62cff4; /* Change button background color on hover */
+}

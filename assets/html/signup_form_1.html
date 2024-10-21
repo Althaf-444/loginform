@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="icon" href="../imgs/images.jpg">
+    <!-- Link to custom CSS file for styling the signup form -->
+    <link rel="stylesheet" href="../css/signup_form_1.css">
+
+    <!-- Preloading background image for faster page load -->
+    <link rel="preload" href="../imgs/17973908.jpg" as="image">
+
+    <!-- Linking Bootstrap CSS for responsive layout and components -->
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <!-- Including jQuery for easier DOM manipulation -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Including Bootstrap JavaScript for interactive components -->
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Bootstrap container to structure the form layout -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Using Bootstrap grid system for responsive design -->
+            <div class="col-lg-12 col-md-12">
+                <!-- Custom class for form styling, defined in signup_form_2.css -->
+                <div class="Signup_border">
+                    <h2>Signup</h2>
+                    <br>
+
+                    <!-- Signup form starts here -->
+                    <form action="" method="post" id="SignupForm">
+                        <!-- Full Name Input -->
+                        <div class="input-group">
+                            <input type="text" id="full_name" name="full_name" required class="input" placeholder=" " autocomplete="off">
+                            <label for="full_name" class="label">Full Name</label>
+                            <span class="error" id="full_nameError"></span>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required class="input" placeholder=" " autocomplete="off">
+                            <label for="email" class="label">Email</label>
+                            <span class="error" id="emailError"></span>
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="input-group">
+                            <input type="password" id="password" name="password" required class="input" placeholder=" ">
+                            <label for="password" class="label">Password</label>
+                            <span class="error" id="passwordError"></span>
+
+                            <!-- Toggle to show/hide password -->
+                            <div class="toggle-checkbox">
+                                <input type="checkbox" id="showPassword">
+                                <label for="showPassword" class="show_btn">Show Password</label>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Policy and Terms of Service Agreement -->
+                        <p class="p">I agree to the <a href="#" class="privacy">privacy policy</a> and <a href="#" class="privacy">terms of service</a></p>
+
+                        <!-- Signup Button -->
+                        <button type="submit" class="signup_btn">Register</button><br>
+
+                        <!-- Link to the login form if the user already has an account -->
+                        <hr>
+                        <p>Already have an account? <a href="../html/login_form_1.html" class="links">Login</a></p>
+                    </form>
+                    <!-- Signup form ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Including custom JavaScript file for additional functionality -->
+    <script src="../js/signup_form_1.js"></script>
+</body>
+
+</html>

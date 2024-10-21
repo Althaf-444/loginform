@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="icon" href="../imgs/images.jpg">
+    <!-- Link to custom CSS for form-specific styling -->
+    <link rel="stylesheet" href="../css/login_form_2.css">
+
+    <!-- Link to Bootstrap CSS for responsive design and default styles -->
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <!-- jQuery library for DOM manipulation and event handling -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS for responsive components like modals, popovers, etc. -->
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Main container for the login form, using Bootstrap grid system -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Column to center the login form in a 12-column Bootstrap grid -->
+            <div class="col-lg-12 col-md-12">
+                <div class="login_border">
+                    <!-- Login form starts -->
+                    <form id="loginForm">
+                        <!-- Title of the form -->
+                        <h2>Login</h2>
+                        
+
+                        <!-- Email input group -->
+                        <div class="input-group">
+                            <!-- Email input field with floating label behavior -->
+                            <input type="email" id="email" name="email" required class="input" placeholder=" " autocomplete="off">
+                            <label for="email" class="label">Email</label>
+                            <!-- Span for displaying any error message related to email input -->
+                            <span class="error" id="emailError"></span>
+                        </div>
+
+                        <!-- Password input group -->
+                        <div class="input-group">
+                            <!-- Password input field with floating label behavior -->
+                            <input type="password" id="password" name="password" required class="input" placeholder=" ">
+                            <label for="password" class="label">Password</label>
+                            <!-- Span for displaying any error message related to password input -->
+                            <span class="error" id="passwordError"></span>
+
+                            <!-- Toggle to show/hide password -->
+                            <div class="toggle-checkbox">
+                                <input type="checkbox" id="showPassword">
+                                <label for="showPassword" class="show_btn">Show Password</label>
+                            </div>
+                        </div>
+
+                        <!-- Submit button for logging in -->
+                        <button type="submit" class="login">Login</button>
+                        <br><br>
+
+                        <!-- Link to the signup page if the user doesn't have an account -->
+                        <p>Don't have an account? <a href="signup_form_2.html" class="links">Signup</a></p>
+                        <hr>
+
+                        <!-- Social media login options -->
+                        <p>or Sign up Using</p>
+                        <!-- Google login button -->
+                        <a href="#" class="btn_1"><img src="../imgs/Google.png" alt="Google" width="10%"></a>
+                        <!-- Facebook login button -->
+                        <a href="#" class="btn_1"><img src="../imgs/Facebook_f_logo_(2021).svg" alt="Facebook" width="10%"></a>
+                        <!-- Instagram login button -->
+                        <a href="#" class="btn_1"><img src="../imgs/Instagram.png" alt="Instagram" width="10%"></a><br>
+                    </form>
+                    <!-- End of login form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to external JavaScript for form validation or additional functionality -->
+    <script src="../js/login_form_2.js"></script>
+</body>
+
+</html>

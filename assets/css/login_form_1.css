@@ -1,0 +1,204 @@
+/* BODY STYLES */
+
+/* Style for the body background and layout */
+body {
+    height: 100%; /* Ensures the body takes the full height of the viewport */
+    background-image: url(../imgs/v915-wit-002.jpg); /* Sets a background image for the body */
+    background-size: cover; /* Ensures the background covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+}
+
+/* CONTAINER STYLES */
+
+/* Style for the container that centers the form on the screen */
+.container-fluid {
+    display: flex; /* Uses Flexbox to position the form */
+    justify-content: center; /* Horizontally centers the form */
+    align-items: center; /* Vertically centers the form */
+    height: 100vh; /* Full viewport height for the container */
+    width: 100vw; /* Full viewport width */
+}
+
+/* FORM STYLES */
+
+/* Style for the login form container (border, background, and spacing) */
+.login_border {
+    text-align: center; /* Centers text inside the form */
+    padding: 20px; /* Adds space inside the form container */
+    width: 350px; /* Sets a fixed width for the form */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    border-radius: 20px; /* Rounds the corners of the form */
+    background: linear-gradient(to top, #62cff4, #2c67f2); /* Gradient background color for the form */
+    opacity: 0.8; /* Slight transparency for form background */
+}
+
+/* INPUT STYLES */
+
+/* Style for the input container, allowing the label to float above the input */
+.input-group {
+    position: relative; /* Ensures the label moves on focus */
+    margin-bottom: 30px; /* Adds space between input fields */
+    text-align: left; /* Aligns text inside the input fields to the left */
+}
+
+/* Style for the floating label */
+.label {
+    position: absolute; /* Positions the label above the input field */
+    left: 10px; /* Positions the label slightly inside the left */
+    top: 12px; /* Initially positions the label near the middle of the input */
+    color: rgb(255, 255, 255); /* White text color for the label */
+    transition: all 0.2s ease; /* Smooth transition for label movement */
+    pointer-events: none; /* Prevents the label from being clicked */
+}
+
+/* Adjusts label position when the input is focused or not empty */
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+    top: -10px; /* Moves the label above the input */
+    left: 10px; /* Maintains padding */
+    font-size: 12px; /* Shrinks the label size */
+    color: #000000; /* Changes the label to black on focus */
+}
+
+/* Styling for the input fields */
+.input {
+    font-size: 18px; /* Sets font size for the input text */
+    border: 2px solid #ccc; /* Adds a bottom border for input fields */
+    border-top: none; /* Removes top border */
+    background: transparent; /* Transparent input background */
+    color: rgb(255, 255, 255); /* White text color */
+    width: 100%; /* Takes the full width of the form */
+    padding: 10px; /* Padding inside the input fields */
+    outline: none; /* Removes default browser outline */
+    transition: all 0.3s ease; /* Smooth transition for border color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    border-radius: 5px; /* Slightly rounds the input field corners */
+}
+
+/* Styling for the placeholder text in the input */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White placeholder text */
+    opacity: 1; /* Full opacity */
+}
+
+/* Input field focus styles */
+input:focus {
+    border-top: none; /* Keeps the top border removed */
+    box-shadow: 0px -5px 10px rgba(255, 244, 244, 0.2); /* Adds a bright shadow */
+    background: rgba(255, 255, 255, 0.1); /* Slightly changes background color */
+}
+
+/* Input field hover effect */
+input:hover {
+    border: 2px solid #ffffff; /* Changes border color to white */
+    border-top: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background tint */
+}
+
+/* Autofill styles for inputs in browsers */
+input:-webkit-autofill {
+    border: 2px solid #000; /* Black border for autofill */
+    background-color: transparent; /* Transparent autofill background */
+    color: rgb(255, 255, 255) !important; /* White text color */
+}
+
+/* PASSWORD INPUT STYLES */
+
+/* Sets font size specifically for password input */
+input[type="password"] {
+    font-size: 18px;
+}
+
+/* EMAIL INPUT STYLES */
+
+/* Style for the email input field */
+#email {
+    padding-right: 30px; /* Adds right padding */
+    padding: 10px; /* Adds padding inside the email input */
+    font-size: 16px; /* Font size for email input */
+}
+
+/* PASSWORD VISIBILITY TOGGLE STYLES */
+
+/* Container for password input and eye icon */
+.password-wrapper {
+    position: relative; /* Positions elements relative to the input */
+    display: inline-block; /* Keeps elements inline */
+}
+
+/* Styling for the checkbox and its label (Show Password) */
+.toggle-checkbox {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Aligns items vertically */
+    margin-top: 10px; /* Adds margin above the checkbox */
+}
+
+#showPassword {
+    margin-right: 5px; /* Adds space between the checkbox and label */
+}
+
+.show_btn {
+    font-size: 13px; /* Font size for the "Show Password" label */
+}
+
+/* BUTTON STYLES */
+
+/* Style for the login button */
+.login_btn {
+    width: 75%; /* Sets the button width to 75% of the form */
+    padding: 10px; /* Padding inside the button */
+    background-color: #ffffff; /* White background for the button */
+    color: rgb(0, 0, 0); /* Black text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounds the button corners */
+    cursor: pointer; /* Changes the cursor to pointer when hovering */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #62cff4; /* Changes button color on hover */
+}
+
+/* Style for social media login buttons */
+.btn_1 {
+    margin: 3px; /* Adds margin around buttons */
+}
+
+/* LINK STYLES */
+
+/* General link styling */
+a {
+    text-decoration: none; /* Removes underline from all links */
+}
+
+/* Style for the signup link */
+#signuplink {
+    text-decoration: none; /* Removes underline from the signup link */
+}
+
+ /* Style for links in the form */
+.links {
+    color: rgb(255, 255, 255); /* White text color for links */
+    padding: 2px; /* Adds padding inside the links */ 
+ }
+
+/* HORIZONTAL RULE (LINE) STYLES */
+
+/* Style for the horizontal rule (line) */
+hr {
+    width: 95%; /* Line width is 95% of the form width */
+}
+
+/* ERROR STYLES */
+
+/* Style for input fields with errors */
+input.error {
+    border: 2px solid red; /* Red border for input errors */
+}
+
+/* Style for error messages */
+.error {
+    color: red; /* Red color for error text */
+    font-size: 12px; /* Smaller font size for error text */
+}

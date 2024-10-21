@@ -1,0 +1,153 @@
+/* General styling for the body, applying a background image and adjusting layout */
+body {
+    height: 100%; /* Full height of the viewport */
+    background-image: url(../imgs/v915-wit-002.jpg); /* Background image */
+    background-size: cover; /* Ensure image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat for the background */
+}
+
+/* Container to center the login form both vertically and horizontally */
+.container-fluid  {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+/* Styling for the login form's container (adds border, padding, and shadow) */
+.login_border {
+    text-align: center; /* Center text inside the form */
+    padding: 20px; /* Padding inside the form */
+    width: 350px; /* Set form width */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow around the form */
+    border-radius: 20px; /* Rounded corners */
+    background: linear-gradient(to top, #62cff4, #2c67f2); /* Gradient background */
+    opacity: 0.8; /* Slight transparency */
+}
+
+/* Container for each input field and its floating label */
+.input-group {
+    position: relative; /* Allows label to move on focus */
+    margin-bottom: 30px; /* Space between input fields */
+    text-align: left; /* Align text to the left */
+}
+
+/* Style for the floating label */
+.label {
+    position: absolute; /* Position label over the input field */
+    left: 10px; /* Slight offset from the left */
+    top: 12px; /* Positioned near the middle of the input */
+    color: rgb(255, 255, 255); /* White text for label */
+    transition: all 0.2s ease; /* Smooth transition for label movement */
+    pointer-events: none; /* Prevents label from being clickable */
+}
+
+/* Adjust label position when input is focused or not empty */
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+    top: -10px; /* Move label above the input */
+    left: 10px; /* Keep left padding consistent */
+    font-size: 12px; /* Shrink label */
+    color: #000000; /* Change label color on focus or input */
+}
+
+/* Base styling for the input fields (email and password) */
+.input {
+    font-size: 18px; /* Font size for input text */
+    border: none; /* Remove default border */
+    border-bottom: 2px solid #ccc; /* Bottom border for line effect */
+    background: transparent; /* Transparent background */
+    color: rgb(255, 255, 255); /* White text */
+    width: 100%; /* Full width of the form */
+    padding: 10px; /* Padding inside the input */
+    transition: all 0.2s ease; /* Smooth transition for border color */
+}
+
+/* Placeholder color for inputs */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White placeholder text with slight transparency */
+    opacity: 1; /* Full opacity for placeholder */
+}
+
+/* Focus state for input fields */
+input:focus {
+    border-bottom: 2px solid rgb(255, 255, 255); /* White bottom border on focus */
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8); /* Brighten the shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Specific styling for the password input */
+input[type="password"] {
+    font-size: 18px; /* Set font size for password input */
+}
+
+/* Autofill styles for browsers like Chrome */
+input:-webkit-autofill {
+    border-bottom: 2px solid #000; /* Black border for autofill */
+    background-color: transparent; /* Transparent background for autofill */
+    color: rgb(255, 255, 255) !important; /* White text color for autofill */
+}
+
+/* Style for the login button */
+.login {
+    width: 75%; /* Button width */
+    padding: 10px; /* Padding for the button */
+    background-color: #ffffff; /* White background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Wrapper for the password visibility toggle */
+.password-wrapper {
+    position: relative; /* Relative positioning for internal elements */
+    display: inline-block; /* Inline block for toggle layout */
+}
+
+/* Styles for the checkbox and label (Show Password) */
+.toggle-checkbox {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Align checkbox and label vertically */
+    margin-top: 5px; /* Small margin above the toggle */
+}
+
+/* Space between checkbox and label */
+#showPassword {
+    margin-right: 5px; /* Space between checkbox and text */
+}
+
+/* Style for "Show Password" text */
+.show_btn {
+    font-size: 13px; /* Font size for the "Show Password" label */
+}
+
+/* Error message styling (for validation) */
+.error {
+    color: red; /* Red text for errors */
+    font-size: 12px; /* Smaller font size for error text */
+}
+
+/* Input field error state */
+input.error {
+    border-bottom: 2px solid red; /* Red bottom border for invalid inputs */
+}
+
+/* Styling for links within the form (e.g., Signup link) */
+.links {
+    color: rgb(255, 255, 255); /* White text for links */
+    padding: 2px; /* Small padding for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for social login buttons */
+.btn_1 {
+    margin: 3px; /* Space between social login buttons */
+}
+
+/* Horizontal rule for dividing sections */
+hr {
+    width: 95%; /* 95% width for the horizontal rule */
+}

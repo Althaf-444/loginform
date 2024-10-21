@@ -126,7 +126,7 @@ input:-webkit-autofill {
 
 /* Style for paragraphs with small text (e.g., the agreement section) */
 .p {
-    font-size: 14px; /* Small font size for paragraphs */
+    font-size: 10px; /* Small font size for paragraphs */
 }
 
 /* Error styling */

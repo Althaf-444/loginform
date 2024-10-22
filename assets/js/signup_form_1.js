@@ -72,3 +72,42 @@ $(document).ready(function () {
         passwordField.attr('type', $(this).is(':checked') ? 'text' : 'password');
     });
 });
+
+
+// Simulating AJAX for the Signup Page
+
+$(document).ready(function() {
+    // Handle signup form submission
+    $("#SignupForm").on('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+
+        // Simulate getting form data
+        var fullName = $("#full_name").val();
+        var email = $("#email").val();
+        var password = $("#password").val();
+
+        // Simulate an AJAX request (without a backend)
+        setTimeout(function() {
+            // Simulated response
+            var response = {
+                success: email !== "" && password.length >= 6,  // Dummy signup validation
+                errors: {
+                    full_name: fullName === "" ? "Full name is required" : '',
+                    email: email === "" ? "Email is required" : '',
+                    password: password.length < 6 ? "Password must be at least 6 characters" : ''
+                }
+            };
+
+            if (response.success) {
+                // On successful signup, simulate redirecting to a welcome page
+                alert("Signup successful!");
+                window.location.href = "welcome.html";  // Simulated page redirection
+            } else {
+                // Display simulated error messages
+                $("#full_nameError").text(response.errors.full_name);
+                $("#emailError").text(response.errors.email);
+                $("#passwordError").text(response.errors.password);
+            }
+        }, 0000); // Simulate delay for AJAX request
+    });
+});

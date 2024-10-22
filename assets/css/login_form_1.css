@@ -3,12 +3,21 @@
 /* Style for the body background and layout */
 body {
     height: 100%; /* Ensures the body takes the full height of the viewport */
-    background-image: url(../imgs/v915-wit-002.jpg); /* Sets a background image for the body */
+    background-image: url(../imgs/bg-img.jpg); /* Sets a background image for the body */
     background-size: cover; /* Ensures the background covers the entire screen */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background from repeating */
 }
-
+/* For mobile screens */
+@media (max-width: 768px) {
+    body {
+      background-image: url('../imgs/bg_img\ _mobile.jpeg'); /* Set your mobile image */
+      background-size: cover;  /* Ensures the mobile image covers the full screen */
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;  /* Full screen on mobile */
+    }
+  }
 /* CONTAINER STYLES */
 
 /* Style for the container that centers the form on the screen */

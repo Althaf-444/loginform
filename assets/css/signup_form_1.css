@@ -52,7 +52,7 @@ body {
     /* Add a subtle shadow for depth */
     border-radius: 20px;
     /* Round corners of the form */
-    background: linear-gradient(to top, #62cff4, #2c67f2);
+    background: linear-gradient(to bottom, #62cff4, #2c67f2);
     /* Gradient background (light to dark blue) */
     opacity: 0.8;
     /* Slightly transparent form */
@@ -62,7 +62,7 @@ body {
 .input-group {
     position: relative;
     /* Allows label to move on focus */
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     /* Space between input fields */
     text-align: left;
     /* Align text to the left */
@@ -250,3 +250,4 @@ button:hover {
     background-color: #62cff4;
     /* Change button background color on hover */
 }
+/* Style for social media login buttons */

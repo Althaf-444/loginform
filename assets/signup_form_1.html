@@ -31,44 +31,57 @@
             <div class="col-lg-12 col-md-12">
                 <!-- Custom class for form styling, defined in signup_form_2.css -->
                 <div class="Signup_border">
-                    <h2>Signup</h2><br>
+                    <h2>Signup</h2>
                     <!-- Signup form starts here -->
                     <form action="" method="post" id="SignupForm">
-                        <!-- Full Name Input -->
-                        <div class="input-group">
-                            <input type="text" id="full_name" name="full_name" required class="input" placeholder=" "
-                                autocomplete="off">
-                            <label for="full_name" class="label">Full Name</label>
-                            <span class="error" id="full_nameError"></span>
-                        </div>
 
-                        <!-- Email Input -->
-                        <div class="input-group">
-                            <input type="email" id="email" name="email" required class="input" placeholder=" "
-                                autocomplete="off">
-                            <label for="email" class="label">Email</label>
-                            <span class="error" id="emailError"></span>
-                        </div>
-
-                        <!-- Password Input -->
-                        <div class="input-group">
-                            <input type="password" id="password" name="password" required class="input" placeholder=" ">
-                            <label for="password" class="label">Password</label>
-                            <span class="error" id="passwordError"></span>
-
-                            <!-- Toggle to show/hide password -->
-                            <div class="toggle-checkbox">
-                                <input type="checkbox" id="showPassword">
-                                <label for="showPassword" class="show_btn">Show Password</label>
-                            </div>
-                        </div>
-                        <!-- Signup Button -->
-                        <button type="submit" class="signup_btn">Register</button><br>
-                        <!-- Link to the login form if the user already has an account -->
-
+                        <!-- Google login button -->
+                            <a href="#" class="btn_1"><img src="imgs/Google.png" alt="Google" width="10%"
+                                    class="img-fluid">Google</a>
+                        <!-- Facebook login button -->
+                            <a href="#" class="btn_1"><img src="imgs/Facebook_f_logo_(2021).svg" alt="Facebook"
+                                    width="10%" class="img-fluid">Facebook</a>
+                        <!-- Instagram login button -->
+                            <a href="#" class="btn_1"><img src="imgs/Instagram.png" alt="Instagram" width="10%"
+                                    class="img-fluid">Instagram</a><br>
                         <hr>
-                        <p>Already have an account? <a href="../index.html" class="links">Login</a></p>
+                        <div class="form_position">
+                            <!-- Full Name Input -->
+                            <div class="input-group">
+                                <input type="text" id="full_name" name="full_name" required class="input"
+                                    placeholder=" " autocomplete="off">
+                                <label for="full_name" class="label">Full Name</label>
+                                <span class="error" id="full_nameError"></span>
+                            </div>
 
+                            <!-- Email Input -->
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required class="input" placeholder=" "
+                                    autocomplete="off">
+                                <label for="email" class="label">Email</label>
+                                <span class="error" id="emailError"></span>
+                            </div>
+
+                            <!-- Password Input -->
+                            <div class="input-group">
+                                <input type="password" id="password" name="password" required class="input"
+                                    placeholder=" ">
+                                <label for="password" class="label">Password</label>
+                                <span class="error" id="passwordError"></span>
+
+                                <!-- Toggle to show/hide password -->
+                                <div class="toggle-checkbox">
+                                    <input type="checkbox" id="showPassword">
+                                    <label for="showPassword" class="show_btn">Show Password</label>
+                                </div>
+                            </div>
+                            <!-- Signup Button -->
+                            <button type="submit" class="signup_btn">Register</button><br>
+                            <!-- Link to the login form if the user already has an account -->
+
+                            <hr>
+                            <p>Already have an account? <a href="../index.html" class="links">Login</a></p>
+                        </div>
                     </form>
                     <!-- Signup form ends here -->
                 </div>

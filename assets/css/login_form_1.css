@@ -47,7 +47,7 @@ body {
 /* Style for the input container, allowing the label to float above the input */
 .input-group {
     position: relative; /* Ensures the label moves on focus */
-    margin-bottom: 30px; /* Adds space between input fields */
+    margin-bottom: 15px; /* Adds space between input fields */
     text-align: left; /* Aligns text inside the input fields to the left */
 }
 
@@ -82,7 +82,7 @@ input:not(:placeholder-shown) + .label {
     outline: none; /* Removes default browser outline */
     transition: all 0.3s ease; /* Smooth transition for border color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    border-radius: 5px; /* Slightly rounds the input field corners */
+    border-radius: 8px ; /* Slightly rounds the input field corners */
 }
 
 /* Styling for the placeholder text in the input */

@@ -211,3 +211,47 @@ input.error {
     color: red; /* Red color for error text */
     font-size: 12px; /* Smaller font size for error text */
 }
+.social-buttons-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns buttons from left to right */
+    gap: 5px; /* Space between buttons */
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-btn {
+    background-color: #db4437;
+    border: 2px solid #db4437;
+  }
+  
+  .facebook-btn {
+    background-color: #4267B2;
+    border: 2px solid #4267B2;
+  }
+  
+  .linkedin-btn {
+    background-color: #cedee7;
+    border: 2px solid #c8d6e2;
+  }
+  
+  .social-button img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 30px; /* Adjust logo size */
+  }
+  
+  .social-button:hover {
+    opacity: 0.8;
+  }

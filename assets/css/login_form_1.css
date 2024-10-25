@@ -211,47 +211,54 @@ input.error {
     color: red; /* Red color for error text */
     font-size: 12px; /* Smaller font size for error text */
 }
+/* Container for social media login buttons */
 .social-buttons-container {
-    display: flex;
-    justify-content: flex-start; /* Aligns buttons from left to right */
+    display: flex; /* Use Flexbox to arrange buttons */
+    justify-content: flex-start; /* Align buttons to the left */
     gap: 5px; /* Space between buttons */
-  }
-  
-  .social-button {
-    display: flex;
+}
+
+/* General style for each social media button */
+.social-button {
+    display: flex; /* Center content within each button */
     align-items: center;
     justify-content: center;
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .google-btn {
-    background-color: #db4437;
-    border: 2px solid #db4437;
-  }
-  
-  .facebook-btn {
-    background-color: #4267B2;
+    width: 100px; /* Button width */
+    padding: 10px; /* Internal padding */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    font-family: Arial, sans-serif; /* Font style */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Google button style */
+.google-btn {
+    background-color: #db4437; /* Google red */
+    border: 2px solid #db4437; /* Border color matches background */
+}
+
+/* Facebook button style */
+.facebook-btn {
+    background-color: #4267B2; /* Facebook blue */
     border: 2px solid #4267B2;
-  }
-  
-  .linkedin-btn {
-    background-color: #cedee7;
-    border: 2px solid #c8d6e2;
-  }
-  
-  .social-button img {
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 30px; /* Adjust logo size */
-  }
-  
-  .social-button:hover {
-    opacity: 0.8;
-  }
+}
+
+/* LinkedIn button style */
+.linkedin-btn {
+    background-color: #cedee7; /* LinkedIn background */
+    border: 2px solid #c8d6e2; /* Border color slightly darker */
+}
+
+/* Icon styling inside social media buttons */
+.social-button img {
+    vertical-align: middle; /* Center vertically */
+    margin-right: 10px; /* Space between icon and text */
+    width: 30px; /* Set icon size */
+}
+
+/* Hover effect for social media buttons */
+.social-button:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+}
